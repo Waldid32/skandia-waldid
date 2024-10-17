@@ -1,83 +1,73 @@
-.containerFooter {
-  width: 100vw;
-  height: min-content;
+.container-footer {
   display: flex;
-  position: absolute;
-  bottom: 0;
-  padding-top: 4rem;
-  padding-bottom: 8rem;
   justify-content: space-around;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  align-items: center;
+  background: #ffffff;
   border-top: 2px solid #00000029;
-}
+  padding: 2rem;
 
-.textColor {
-  color: #00c83c;
-  font-weight: 800;
-}
-
-.logo {
-  width: 138px;
-  height: 24px;
-}
-
-.textOficina {
-  color: #3f3f3f;
-}
-
-.containerLogo {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.containerDatos {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.menuFooter {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  align-items: start;
-
-  a {
-    color: #3f3f3f;
-    text-wrap: wrap;
+  .text-highlight {
+    color: #00c83c;
+    font-weight: 800;
   }
-}
 
-.containerRedesSociales {
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  gap: 20px;
-}
+  .logo {
+    width: 138px;
+    height: 24px;
+  }
 
-.iconRedesSocial {
-  width: 20px;
-  height: 20px;
+  .text-oficina {
+    color: #3f3f3f;
+  }
+
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .container-datos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .menu-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    a {
+      color: #3f3f3f;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .container-redes-sociales {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .icon-redes-social {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 @media (max-width: 768px) {
-  .containerFooter {
+  .container-footer {
     flex-direction: column;
-    gap: 50px;
-    width: 100vw;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 60px;
-    height: min-content;
-  }
-
-  .containerRedesSociales {
     justify-content: start;
-    align-items: start;
+    align-items: center;
+    gap: 3rem;
   }
-
-  .menuFooter a {
-    font-size: 13px;
+  .menu-footer {
+    justify-content: center;
+    align-items: center;
+    gap: 0;
   }
 }
