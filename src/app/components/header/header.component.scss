@@ -1,0 +1,68 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.headerContainerSegundario {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff 0% 0% no-repeat padding-box;
+    width: 1320px;
+    height: 80px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.containerLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.separadorLogo {
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.rightMenu {
+    display: flex;
+    justify-content: space-center;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.rightMenu div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.rightMenu a {
+    color: #00C83C;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
