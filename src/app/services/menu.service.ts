@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
   providedIn: 'root',
 })
 export class MenuService {
-  private menuOpenSubject = new BehaviorSubject<boolean>(true);
+  private menuOpenSubject = new BehaviorSubject<boolean>(false);
   menuOpen$ = this.menuOpenSubject.asObservable();
 
   toggleMenu() {
