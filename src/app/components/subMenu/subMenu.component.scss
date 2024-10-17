@@ -1,30 +1,31 @@
-.subMenuContainer {
-  position: fixed;
+.sub-menu-container {
+  position: absolute;
   left: 0;
   height: 100vh;
-  opacity: 1;
-  background: #e2e2e2 0% 0% no-repeat padding-box;
-  width: 181px;
-  z-index: 5;
+  background: #e2e2e2;
+  width: 180px;
+  transition: 0.3s ease;
+  z-index: 1;
 
   &.collapsed {
     width: 50px;
-
   }
 
   .menu-header {
     display: flex;
-    align-items: center;
+    align-items: start;
     cursor: pointer;
     padding: 10px;
     background-color: #00c83c;
+    transition: background-color 0.3s ease;
 
     .icon {
       margin-right: 10px;
     }
 
-    .textHome {
+    .text-home {
       color: #fff;
+      transition: opacity 0.3s ease;
     }
   }
 
@@ -32,6 +33,7 @@
     display: flex;
     align-items: center;
     padding: 10px;
+    transition: background-color 0.3s ease;
 
     .icon {
       margin-right: 10px;
@@ -39,7 +41,22 @@
   }
 
   .menu-item:hover {
-    color: #fff;
     background-color: #00c83c;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .sub-menu-container {
+      width: 50px;
+    }
+
+    .menu-header {
+      justify-content: start;
+    }
+
+    .menu-item {
+      justify-content: start;
+    }
   }
 }

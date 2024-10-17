@@ -7,26 +7,24 @@ import { MenuService } from '../../services/menu.service';
   standalone: true,
   imports: [NgIf, NgClass, NgFor],
   template: `
-    <div class="subMenuContainer" [ngClass]="{ collapsed: !isExpanded }">
-      <!-- Ícono de home que controla el estado del menú -->
-      <div class="menu-header" (click)="toggleMenu()">
-        <div>
-          <img src="assets/subMenu/home.svg" alt="Home" class="icon" />
-          <span *ngIf="isExpanded" class="textHome">Inicio</span>
-        </div>
+    <aside class="sub-menu-container" [ngClass]="{ collapsed: !isExpanded }">
+      <div class="menu-header" (click)="toggleMenu()" aria-label="Toggle menu">
+        <img src="assets/subMenu/home.svg" alt="Home" class="icon" />
+        <span *ngIf="isExpanded" class="text-home">Inicio</span>
       </div>
 
-      <!-- Opciones del menú -->
-      <div class="menu-item" *ngFor="let item of menuItems">
-        <img
-          [src]="item.icon"
-          alt="{{ item.label }}"
-          class="icon"
-          *ngIf="isExpanded"
-        />
-        <span *ngIf="isExpanded">{{ item.label }}</span>
-      </div>
-    </div>
+      <nav aria-label="Opciones del menú">
+        <div class="menu-item" *ngFor="let item of menuItems">
+          <img
+            [src]="item.icon"
+            [alt]="item.label"
+            class="icon"
+            *ngIf="isExpanded"
+          />
+          <span *ngIf="isExpanded">{{ item.label }}</span>
+        </div>
+      </nav>
+    </aside>
   `,
   styleUrls: ['./subMenu.component.scss'],
 })
@@ -38,11 +36,9 @@ export class SubMenuComponent {
     { label: 'Acciones', icon: 'assets/subMenu/tool.svg' },
     { label: 'Objetivos', icon: 'assets/subMenu/star.svg' },
     { label: 'Herramientas', icon: 'assets/subMenu/money.svg' },
-    {
-      label: 'Servicio al cliente',
-      icon: 'assets/subMenu/talk2.svg',
-    },
+    { label: 'Servicio al cliente', icon: 'assets/subMenu/talk2.svg' },
   ];
+
   constructor(private menuService: MenuService) {
     this.menuService.menuOpen$.subscribe((isOpen) => {
       this.isExpanded = isOpen;
