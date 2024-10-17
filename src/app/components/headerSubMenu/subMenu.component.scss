@@ -1,0 +1,42 @@
+.subMenuContainer {
+  height: 100vh;
+  opacity: 1;
+  background: #e2e2e2 0% 0% no-repeat padding-box;
+  width: 181px;
+
+  &.collapsed {
+    width: 50px;
+
+  }
+
+  .menu-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #00c83c;
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .textHome {
+      color: #fff;
+    }
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .icon {
+      margin-right: 10px;
+    }
+  }
+
+  .menu-item:hover {
+    color: #fff;
+    background-color: #00c83c;
+  }
+}
