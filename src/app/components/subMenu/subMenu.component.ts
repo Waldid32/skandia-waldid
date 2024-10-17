@@ -29,7 +29,7 @@ import { NgClass, NgFor, NgIf } from '@angular/common';
   `,
   styleUrls: ['./subMenu.component.scss'],
 })
-export class HeaderComponentSubMenu {
+export class SubMenuComponent {
   isExpanded = false;
 
   menuItems = [
