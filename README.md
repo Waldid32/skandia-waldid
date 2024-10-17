@@ -1,5 +1,11 @@
 # SkandiaWaldid
 
+## Link Online
+
+Se despliega el proyecyo en Vercel para que sea accesible desde cualquier lugar.
+
+[SkandiaWaldid](https://skandia-waldid.vercel.app/)
+
 ## Descripción
 
 Este proyecto consiste en una aplicación web desarrollada como parte de una prueba técnica, utilizando tecnologías modernas como Angular, HTML, CSS, y JavaScript. El objetivo es demostrar la capacidad para crear y estructurar interfaces interactivas con las mejores prácticas.
