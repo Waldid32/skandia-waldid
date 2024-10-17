@@ -7,22 +7,22 @@ import { MenuService } from '../../services/menu.service';
   standalone: true,
   imports: [NgIf, NgClass],
   template: `
-    <header class="headerContainer">
-      <div (click)="toggleMenu()" class="menuIcon">
-        <img src="assets/header/menu-icon.svg" alt="Menu icon" />
-      </div>
+    <header class="header-container">
+      <button (click)="toggleMenu()" class="menu-icon" aria-label="Abrir menú">
+        <img src="assets/header/menu-icon.svg" alt="Ícono de menú" />
+      </button>
 
-      <div class="containerLogo">
-        <img src="assets/header/skandia-logo.svg" alt="Skandia logo" />
-        <span class="separadorLogo"><strong>|</strong></span>
+      <div class="container-logo">
+        <img src="assets/header/skandia-logo.svg" alt="Logo de Skandia" />
+        <span class="separador-logo"><strong>|</strong></span>
         <span>Plan Financiero Digital - FPX</span>
       </div>
 
-      <div class="containerMenu">
+      <nav class="container-menu" aria-label="Menú principal">
         <div>
           <img
             src="assets/header/happy-icon.svg"
-            alt="Happy icon"
+            alt="Ícono de tu Financial Planner"
             class="icon"
           />
           <a href="#">Tu Financial Planner</a>
@@ -31,7 +31,7 @@ import { MenuService } from '../../services/menu.service';
         <div>
           <img
             src="assets/header/aportes-icon.svg"
-            alt="Aportes icon"
+            alt="Ícono de aportes"
             class="icon"
           />
           <a href="#">Aportes</a>
@@ -40,7 +40,7 @@ import { MenuService } from '../../services/menu.service';
         <div (mouseenter)="showHelp()" (mouseleave)="hideHelp()">
           <img
             src="assets/header/account-circle-icon.svg"
-            alt="Happy icon"
+            alt="Ícono de preguntas frecuentes"
             class="icon"
           />
           <a href="#" [ngClass]="{ visible: isShowHelp, hidden: !isShowHelp }"
@@ -48,14 +48,13 @@ import { MenuService } from '../../services/menu.service';
             Frecuentes</a
           >
         </div>
-      </div>
+      </nav>
     </header>
   `,
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
   isShowHelp = false;
-  menuOpen = false;
 
   constructor(private menuService: MenuService) {}
 
