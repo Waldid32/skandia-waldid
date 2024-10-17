@@ -1,0 +1,66 @@
+.containerFooter {
+    width: 1366px;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-top: 2px solid #00000029;
+    padding-top: 40px;
+    padding-left: 90px;
+    padding-bottom: 80px;
+}
+
+.textColor {
+    color: #00c83c;
+    font-weight: 800;
+}
+
+.logo {
+    width: 138px;
+    height: 24px;
+}
+
+.textOficina {
+    color: #3f3f3f;
+}
+
+.containerLogo {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.containerDatos {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menuFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 6px;
+    align-items: start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    a {
+        color: #3f3f3f;
+    }
+}
+
+.containerRedesSociales {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.iconRedesSocial {
+    width: 20px;
+    height: 20px;
+}
