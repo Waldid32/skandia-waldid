@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgClass, NgFor, NgIf } from '@angular/common';
+import { MenuService } from '../../services/menu.service';
 
 @Component({
   selector: 'app-subMenu',
@@ -42,6 +43,11 @@ export class SubMenuComponent {
       icon: 'assets/subMenu/talk2.svg',
     },
   ];
+  constructor(private menuService: MenuService) {
+    this.menuService.menuOpen$.subscribe((isOpen) => {
+      this.isExpanded = isOpen;
+    });
+  }
 
   toggleMenu() {
     this.isExpanded = !this.isExpanded;
