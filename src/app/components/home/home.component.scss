@@ -174,9 +174,14 @@
   @media (max-width: 768px) {
     .container-home-card {
       flex-direction: column;
-      align-items: center;
-      padding-left: 20px;
       text-align: center;
+      align-items: center;
+      margin-left: 70px;
+      width: 100%;
+
+      a {
+        font-size: 12px;
+      }
 
       .content {
         padding: 0;
@@ -187,7 +192,7 @@
         width: 280px;
         height: min-content;
         text-align: center;
-        margin-left: 80px;
+        margin-left: 40px;
         position: absolute;
         top: 300px;
       }
