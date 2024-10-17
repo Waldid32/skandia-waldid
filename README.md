@@ -1,27 +1,47 @@
 # SkandiaWaldid
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+## Descripción
 
-## Development server
+Este proyecto consiste en una aplicación web desarrollada como parte de una prueba técnica, utilizando tecnologías modernas como Angular, HTML, CSS, y JavaScript. El objetivo es demostrar la capacidad para crear y estructurar interfaces interactivas con las mejores prácticas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Prueba técnica Front End.
 
-## Code scaffolding
+### Objetivo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+El objetivo de esta prueba es evidenciar habilidades en el desarrollo y maquetación de experiencias web utilizando las mejores prácticas. Se trabajará con tecnologías como HTML, CSS, SCC, SASS, JavaScript y Angular, cumpliendo con criterios de rendimiento, accesibilidad y modularidad.
 
-## Build
+### Requisitos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Node.js (versión X.X.X)
+- Angular CLI (versión X.X.X)
+- Navegador web moderno
 
-## Running unit tests
+### Instalación y Ejecución
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/usuario/skandia-waldid.git
+   ```
+2. cd skandia-waldid
+3. Instala las dependencias:
+   ```bash
+   npm install
+   ```
+4. Ejecuta el servidor de desarrollo:
+   ```bash
+       ng serve
+   ```
+5. Abre la aplicación en el navegador:
+   ```bash
+   http://localhost:4200/
+   ```
 
-## Running end-to-end tests
+### Documentación Técnica
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+El proyecto está estructurado siguiendo las mejores prácticas de Angular, con una separación clara entre componentes, servicios y módulos. Los principales directorios y archivos son:
 
-## Further help
+- **src/app**: Contiene todos los componentes de la aplicación.
+- **src/assets**: Archivos estáticos como imágenes y estilos globales.
+- **src/environments**: Configuraciones para distintos entornos (producción, desarrollo).
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Cada componente tiene su propio archivo HTML, SCSS y TypeScript para mantener una separación clara de responsabilidades.
