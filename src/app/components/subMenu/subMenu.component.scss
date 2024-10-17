@@ -5,6 +5,7 @@
   opacity: 1;
   background: #e2e2e2 0% 0% no-repeat padding-box;
   width: 181px;
+  z-index: 5;
 
   &.collapsed {
     width: 50px;
