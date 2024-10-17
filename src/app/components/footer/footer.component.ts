@@ -32,7 +32,7 @@ import { Component } from '@angular/core';
         <a href="#">Términos y Condiciones Canales de Servicio</a>
         <a href="#">Defensoría del Consumidor Financiero</a>
         <a href="#">Protección de Datos</a>
-        <a href="#">Definiciones Generales – Auto declaración FATCA y CRS</a>
+        <a href="#">Definiciones Generales - Auto declaración FATCA y CRS</a>
         <a href="#">Recomendaciones de Seguridad</a>
         <a href="#">Ley de Transparencia</a>
         <a href="#">Mapa del sitio</a>
