@@ -181,6 +181,7 @@
   .title-home {
     width: 300px;
     text-align: center;
+    margin-left: 75px;
 
     h1 {
       margin: 0;
@@ -239,12 +240,13 @@
 
   .container-progress {
     height: 600px;
+    padding-bottom: 50px;
   }
 
   .container-progress-content {
     width: 280px;
     margin-top: 450px;
-    margin-left: 80px;
+    margin-left: 75px;
     text-align: center;
 
     h3 {
@@ -257,12 +259,6 @@
 
     h4 {
       font-size: 16px;
-    }
-
-    .progress-icon {
-      display: flex;
-      flex-direction: row;
-      gap: 10px;
     }
   }
 }
